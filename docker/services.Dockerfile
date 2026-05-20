@@ -13,7 +13,7 @@ FROM eclipse-temurin:17-jre-alpine
 ARG WORKDIR=/build
 WORKDIR /app
 
-COPY --from=build ${WORKDIR}/target/auth-service-0.0.1-SNAPSHOT.jar /app/auth-service.jar
+COPY --from=build ${WORKDIR}/med-pharma-erp-application/target/auth-service-0.0.1-SNAPSHOT.jar /app/auth-service.jar
 
 EXPOSE 8081
 
